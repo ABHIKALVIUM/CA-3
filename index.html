@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a class="logo"><img src="logo.png"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li id="info"><a href="#home" class="active">Home</a></li>
+            <li id="info-btn"><a href="#about">About Us</a></li>
+        </ul>
+        
+
+<div id="mealContainer"></div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Enjoy The Organic Food With Us</h1>
+            <input type="text" id="categoryInput" placeholder="Enter a meal category">
+            <button id="search-btn" onclick="searchByCategory()">Search</button>
+        </div>
+    </section>
+
+    <!-- Random Meal Section -->
+    <section class="random-meal">
+        <h2>Random Meal</h2>
+        <div class="meal-container" id="randomMeal">
+            <!-- Random meal will be displayed here -->
+        </div>
+    </section>
+
+	<!-- Searched Meal Images Section -->
+<section class="searched-meals">
+    <h2>Searched Meals</h2>
+    <div class="meal-container" id="searchedMealContainer">
+        <!-- Searched meal images will be displayed here -->
+    </div>
+</section>
+<section class="contact" id="contact">
+
+	<div class="contact-us">
+		<h3>Menu Links</h3>
+		<li><a href="#home" class="active">Home</a></li>
+		<li><a href="#about">About Us</a></li>
+	</div>
+
+	<div class="contact-us">
+		<h3>Our Foods</h3>
+		<li><a href="#">Sushi</a></li>
+		<li><a href="#">Fish fofos</a></li>
+		<li><a href="#">Saltfish and Ackee</a></li>
+		<li><a href="#"> Tuna and Egg Briks</a></li>
+		<li><a href="#">Recheado Masala Fish</a></li>
+	</div>
+
+	<div class="contact-box address">
+		<h3>Contact</h3>
+		<i class='bx bxs-map' ><span>Near Manipal University Jaipur</span></i>
+		<i class='bx bxs-phone' ><span>6377517341</span></i>
+	</div>
+
+</section>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
